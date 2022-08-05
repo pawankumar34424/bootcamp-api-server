@@ -15,6 +15,12 @@ class MySqlDatabaseService {
         this.modelColumns = Object.keys(EventModel);
     }
     async connect() {
+        console.log('print cred',{
+            host: this.HOST,
+            user: this.USER,
+            password: this.PASSWORD,
+            database: this.DATABASE
+        })
         this.connection = await mysql.createConnection({
             host: this.HOST,
             user: this.USER,
