@@ -3,9 +3,9 @@ const mysql = require("mysql2/promise");
 const EventModel = require('../models/event.model');
 
 class MySqlDatabaseService {
-    HOST = process.env.DBHOST ? process.env.DBHOST : "127.0.0.1";
-    USER = process.env.DBUSER ? process.env.DBUSER : "dbadmin";
-    PASSWORD = process.env.DBPASSWORD ? process.env.DBPASSWORD : "#Mdr90292";
+    HOST = process.env.DBHOST ? process.env.DBHOST : "database-server-mariadb";
+    USER = process.env.DBUSER ? process.env.DBUSER : "root";
+    PASSWORD = process.env.DBPASSWORD ? process.env.DBPASSWORD : "4sZMt99MKd";
     DATABASE = process.env.DBDATABASE ? process.env.DBDATABASE : "events_db";
     PLACEHOLDER = '?,';
     modelColumns = [];
