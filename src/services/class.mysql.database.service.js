@@ -12,7 +12,7 @@ class MySqlDatabaseService {
 
     constructor() {
         this.connect().then().catch(error => console.log('Connect Error: ', error.message));
-        this.modelColumns = Object.keys(EventModel);
+        this.modelColumns = Object.keys(new EventModel());
     }
     async connect() {
         console.log('print cred',{
